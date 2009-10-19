@@ -1,0 +1,13 @@
+application: kanjy-wave
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_wave/.*
+  script: kanjy.py
+- url: /assets
+  static_dir: assets
+- url: /images
+  static_dir: images
+
